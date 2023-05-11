@@ -1,1 +1,1 @@
-"# randomMovieToday" 
+Projeto que sorteia um filme aleatório para o usuário, onde fornece um filme, sua sinopse, sua nota no IMDb e onde assistir, buscando fazer algo simples mas que ajude bastante os usuários em reduzir o tempo que ficam buscando filmes em sites de streaming variados.
