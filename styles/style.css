@@ -17,8 +17,12 @@ body{
 }
 
 .short{
-    display: flex;
-    gap: 5em;
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-gap: 1.25em;
+    padding: 20px;
 }
 
 .card{
@@ -199,11 +203,12 @@ body{
 
 @media screen and (max-width: 460px){
     body{
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
 
     .short{
         flex-direction: column;
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     }
 
     .short .styleFour{
