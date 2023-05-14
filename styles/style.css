@@ -100,14 +100,22 @@ body{
 }
 
 .card .details .tags span{
+    font-size: 0.8em;
     padding: 0.125em 0.313em;
-    background: #03a8f5;
     border-radius: 0.25em;
+    text-transform: capitalize;
 }
 
-.card .details .tags span:nth-child(2){
-    background: #ff5722;
-}
+/* ------------- tag colors based on movie genres ------------------------ */
+
+.infantil{background: #91c12f;} .documentário{background: #63bc5a;} .romântica{background: #ec8fe6;}
+.suspense{background: #919aa2;} .ficção{background: #0b6dc3;} .romance{background: #fa7179;}
+.espionagem{background: #5269ad;} .faroeste{background: #d97845;} .policial{background: #5a8ea2;}
+.ação{background: #ff9d55;} .aventura{background: #89aae3;} .musical{background: #73cec0;}
+.comédia{background: #f4d23c;} .guerra{background: #c5b78c;} .terror{background: #5a5465;}
+.drama{background: #5090d6;} .dança{background: #ce416b;} .fantasia{background: #b567ce;}
+
+/* -------------------------- End tag colors -------------------------- */
 
 .card .details .sinopse{
     margin-top: 0.625em;
