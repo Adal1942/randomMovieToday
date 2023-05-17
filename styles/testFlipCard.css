@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(#007bb2, #0d1423);
+    background: linear-gradient(#5ebce7, #0d1423);
     font-size: 1em;
     color: #fff;
 }
@@ -26,32 +26,122 @@ body{
     padding: 20px;
 }
 
-.container{
-    height: 400px;
-    width: 220px;
+.card{
+    height: 28.125em;
+    width: 20em;
     position: relative;
+    overflow: hidden;
     perspective: 1000px;
+    border-radius: 20px;
+    background: linear-gradient(#7a0e0b, #0d1423);
+    border: 1px solid #000;
 }
 
-.front, .back{
+.card .front,.card .back{
     position: absolute;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: all 1s ease;
 }
 
-.front{
+.card .front{
     transform: rotateY(0deg);
 }
 
-.back{
+.card .back{
     transform: rotateY(180deg);
 }
 
-.container:hover .front{
+.card .front img{
+    max-width: 100%; 
+    border-radius: 20px;
+}
+
+
+.card .back .details{
+    max-width: 100%;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.card .back .details h2{
+    font-size: 1.3em;
+}
+
+.card .back .details h3{
+    font-size: 0.8em;
+}
+
+.card .back .details .rating{
+    position: relative;
+    padding: 0.313em 0;
+    font-size: 0.9;
+}
+
+.card .back .details .rating .fa-star{
+    color: #f7f406;
+    font-size: 1em;
+}
+
+
+.card .back .details .tags{
+    position: relative;
+    margin-top: 0.313em;
+}
+
+.comédia{background: #f4d23c;}
+.policial{background: #5a8ea2;}
+
+.card .back .details .tags span{
+    font-size: 0.75em;
+    padding: 0.125em 0.313em;
+    border-radius: 0.25em;
+    text-transform: capitalize;
+}
+
+.card .back .details .sinopse{
+    margin-top: 0.625em;
+}
+
+.card .back .details .sinopse p{
+    font-size: 0.65em;
+}
+
+.card .back .details .ageAndTime p{
+    font-size: 0.6em;
+}
+
+.card .back .details .streaming{
+    position: relative;
+}
+
+.card .back .details .streaming h4{
+    margin-top: 0.625em;
+}
+
+.card .back .details .streaming ul{
+    position: relative;
+    display: flex;
+    gap: 0.625em;
+    margin-top: 0.625em;
+}
+
+.card .back .details .streaming ul li{
+    list-style: none;
+    width: 2.1em;
+    height: 2.1em;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card .back .details .streaming ul li img{
+    max-width: 100%;
+}
+
+.card:hover .front{
     transform: rotateY(-180deg);
 }
 
-.container:hover .back{
+.card:hover .back{
     transform: rotateY(0deg);
 }

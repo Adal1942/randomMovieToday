@@ -10,9 +10,9 @@ const filmography = [
         nota: '8,1',
         tag1: 'infantil',
         tag2: 'aventura',
-        logo1: '<li><img src="./assets/img/logos/paramount.png" alt=""></li>',
-        logo2: '<li><img src="./assets/img/logos/hbo.png" alt=""></li>',
-        logo3: '<li><img src="./assets/img/logos/globoPlay.png" alt=""></li>',
+        logo1: 'paramount.png',
+        logo2: 'hbo.png',
+        logo3: 'globoPlay.png',
         logo4: '',
         logo5: '',
     },
@@ -27,9 +27,9 @@ const filmography = [
         nota: '7,8',
         tag1: 'infantil',
         tag2: 'aventura',
-        logo1: '<li><img src="./assets/img/logos/netflix.png" alt=""></li>',
-        logo2: '<li><img src="./assets/img/logos/primeVideo.png" alt=""></li>',
-        logo3: '<li><img src="./assets/img/logos/globoPlay.png" alt=""></li>',
+        logo1: 'netflix.png',
+        logo2: 'primeVideo.png',
+        logo3: 'globoPlay.png',
         logo4: '',
         logo5: '',
     },
@@ -44,7 +44,7 @@ const filmography = [
         nota: '7,4',
         tag1: 'infantil',
         tag2: 'fantasia',
-        logo1: '',
+        logo1: 'not.png',
         logo2: '',
         logo3: '',
         logo4: '',
@@ -282,9 +282,9 @@ const filmography = [
         nota: '6,5',
         tag1: 'ação',
         tag2: 'drama',
-        logo1: '<li><img src="./assets/img/logos/netflix.png" alt=""></li>',
-        logo2: '<li><img src="./assets/img/logos/globoPlay.png" alt=""></li>',
-        logo3: '<li><img src="./assets/img/logos/now.png" alt=""></li>',
+        logo1: 'netflix.png',
+        logo2: 'globoPlay.png',
+        logo3: 'now.png',
         logo4: '',
         logo5: '',
     },
@@ -843,8 +843,8 @@ const filmography = [
         nota: '6,2',
         tag1: 'musical',
         tag2: 'infantil',
-        logo1: '<li><img src="./assets/img/logos/" alt=""></li>',
-        logo2: '<li><img src="./assets/img/logos/" alt=""></li>',
+        logo1: '<li><img src="./assets/img/logos/disney+.png" alt=""></li>',
+        logo2: '',
         logo3: '',
         logo4: '',
         logo5: '',
@@ -911,7 +911,7 @@ const filmography = [
         nota: '8,4',
         tag1: 'infantil',
         tag2: 'comédia',
-        logo1: '<li><img src="./assets/img/logos/disney+.png" alt=""></li>',
+        logo1: 'disney+.png',
         logo2: '',
         logo3: '',
         logo4: '',
@@ -928,7 +928,7 @@ const filmography = [
         nota: '7,3',
         tag1: 'infantil',
         tag2: 'aventura',
-        logo1: '<li><img src="./assets/img/logos/disney+.png" alt=""></li>',
+        logo1: 'disney+.png',
         logo2: '',
         logo3: '',
         logo4: '',
@@ -945,7 +945,7 @@ const filmography = [
         nota: '6,9',
         tag1: 'comédia',
         tag2: 'fantasia',
-        logo1: '<li><img src="./assets/img/logos/primeVideo.png" alt=""></li>',
+        logo1: 'primeVideo.png',
         logo2: '',
         logo3: '',
         logo4: '',
@@ -962,7 +962,7 @@ const filmography = [
         nota: '6,3',
         tag1: 'comédia',
         tag2: 'fantasia',
-        logo1: '<li><img src="./assets/img/logos/primeVideo.png" alt=""></li>',
+        logo1: 'primeVideo.png',
         logo2: '',
         logo3: '',
         logo4: '',
@@ -979,8 +979,8 @@ const filmography = [
         nota: '8,3',
         tag1: 'ficção científica',
         tag2: 'drama',
-        logo1: '<li><img src="./assets/img/logos/hbo.png" alt=""></li>',
-        logo2: '<li><img src="./assets/img/logos/now.png" alt=""></li>',
+        logo1: 'hbo.png',
+        logo2: 'now.png',
         logo3: '',
         logo4: '',
         logo5: '',
@@ -996,8 +996,8 @@ const filmography = [
         nota: '8,1',
         tag1: 'ficção científica',
         tag2: 'ação',
-        logo1: '<li><img src="./assets/img/logos/hbo.png" alt=""></li>',
-        logo2: '<li><img src="./assets/img/logos/now.png" alt=""></li>',
+        logo1: 'hbo.png',
+        logo2: 'now.png',
         logo3: '',
         logo4: '',
         logo5: '',
@@ -1013,8 +1013,8 @@ const filmography = [
         nota: '8,0',
         tag1: 'ficção científica',
         tag2: 'ação',
-        logo1: '<li><img src="./assets/img/logos/netflix.png" alt=""></li>',
-        logo2: '<li><img src="./assets/img/logos/paramount.png" alt=""></li>',
+        logo1: 'netflix.png',
+        logo2: 'paramount.png',
         logo3: '',
         logo4: '',
         logo5: '',
@@ -1030,7 +1030,7 @@ const filmography = [
         nota: '7,1',
         tag1: 'ação',
         tag2: 'terror',
-        logo1: '<li><img src="./assets/img/logos/hbo.png" alt=""></li>',
+        logo1: 'hbo.png',
         logo2: '',
         logo3: '',
         logo4: '',
@@ -1047,7 +1047,7 @@ const filmography = [
         nota: '6,7',
         tag1: 'ação',
         tag2: 'terror',
-        logo1: '<li><img src="./assets/img/logos/hbo.png" alt=""></li>',
+        logo1: 'hbo.png',
         logo2: '',
         logo3: '',
         logo4: '',
@@ -1064,7 +1064,7 @@ const filmography = [
         nota: '5,8',
         tag1: 'ação',
         tag2: 'terror',
-        logo1: '<li><img src="./assets/img/logos/hbo.png" alt=""></li>',
+        logo1: 'hbo.png',
         logo2: '',
         logo3: '',
         logo4: '',
@@ -1081,7 +1081,7 @@ const filmography = [
         nota: '7,2',
         tag1: 'infantil',
         tag2: 'comédia',
-        logo1: '<li><img src="./assets/img/logos/disney+.png" alt=""></li>',
+        logo1: 'disney+.png',
         logo2: '',
         logo3: '',
         logo4: '',
@@ -1098,7 +1098,7 @@ const filmography = [
         nota: '8,1',
         tag1: 'comédia',
         tag2: 'aventura',
-        logo1: '<li><img src="./assets/img/logos/disney+.png" alt=""></li>',
+        logo1: 'disney+.png',
         logo2: '',
         logo3: '',
         logo4: '',
@@ -1115,7 +1115,7 @@ const filmography = [
         nota: '8,1',
         tag1: 'infantil',
         tag2: 'aventura',
-        logo1: '<li><img src="./assets/img/logos/disney+.png" alt=""></li>',
+        logo1: 'disney+.png',
         logo2: '',
         logo3: '',
         logo4: '',
@@ -1135,34 +1135,40 @@ function render(filmography){
         filmography.forEach((cod, index) =>{
             list+= `
                 <div class="card">
-                    <div class="poster">
-                        <img src="./assets/img/capas/${cod.capa}.png" alt="">
+                    <div class="front">
+                        <div class="poster">
+                            <img src="./assets/img/capas/${cod.capa}.png" alt="">
+                        </div>
                     </div>
-                    <div class="details">
-                        <h3>Direção: ${cod.direcao}</h3>
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i>
-                            <span>${cod.nota}/10 IMDb</span>
-                        </div>
-                        <div class="ageAndTime">
-                            <p>${cod.age} - ${cod.duration}</p>
-                        </div>
-                        <div class="tags">
-                            <span class="${cod.tag1}">${cod.tag1}</span>
-                            <span class="${cod.tag2}">${cod.tag2}</span>
-                        </div>
-                        <div class="sinopse">
-                            <p>${cod.sinopse}</p>
-                        </div>
-                        <div class="streaming">
-                            <h4>Onde assistir?</h4>
-                            <ul>
-                                ${cod.logo1}
-                                ${cod.logo2}
-                                ${cod.logo3}
-                                ${cod.logo4}
-                                ${cod.logo5}
-                            </ul>
+                   
+                    <div class="back">
+                        <div class="details">
+                                <h2>Direção: ${cod.name}</h2>
+                                <h3>Direção: ${cod.direcao}</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>${cod.nota}/10 IMDb</span>
+                                </div>
+                                <div class="ageAndTime">
+                                    <p>${cod.age} - ${cod.duration}</p>
+                                </div>
+                                <div class="tags">
+                                    <span class="${cod.tag1}">${cod.tag1}</span>
+                                    <span class="${cod.tag2}">${cod.tag2}</span>
+                                </div>
+                                <div class="sinopse">
+                                    <p>${cod.sinopse}</p>
+                                </div>
+                                <div class="streaming">
+                                    <h4>Onde assistir?</h4>
+                                    <ul>
+                                        <li><img src="./assets/img/logos/${cod.logo1}" alt=""></li>
+                                        <li><img src="./assets/img/logos/${cod.logo2}" alt=""></li>
+                                        <li><img src="./assets/img/logos/${cod.logo3}" alt=""></li>
+                                        <li><img src="./assets/img/logos/${cod.logo4}" alt=""></li>
+                                        <li><img src="./assets/img/logos/${cod.logo5}" alt=""></li>
+                                    </ul>
+                                </div>
                         </div>
                     </div>
                 </div>
