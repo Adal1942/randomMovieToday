@@ -23,7 +23,7 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     grid-gap: 1.25em;
-    padding: 20px;
+    padding: 1.5em;
     font-size: 0.8em;
 }
 
@@ -198,13 +198,14 @@ body{
 
 
 @media screen and (max-width: 460px){
-    body{
-        font-size: 0.5em;
-    }
-
     .short{
         flex-direction: column;
-        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+        font-size: 0.5em;
+        margin: auto 0;
+    }
+
+    .card .back .details .sinopse p{
+        font-size: 0.5em;
     }
 
     .short .styleFour{
