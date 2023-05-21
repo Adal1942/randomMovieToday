@@ -7,141 +7,170 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(#5ebce7, #0d1423);
-    font-size: 1em;
+
+
+header{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: rgb(8, 9, 19);
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.short{
-    position: relative;
-    width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    grid-gap: 1.25em;
-    padding: 20px;
+.brand{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    padding: 4%;
 }
 
-.card{
-    height: 28.125em;
-    width: 20em;
-    position: relative;
-    overflow: hidden;
-    perspective: 1000px;
-    border-radius: 20px;
-    background: linear-gradient(#7a0e0b, #0d1423);
-    border: 1px solid #000;
+.brand .fa-film{
+    font-size: 25px;
 }
 
-.card .front,.card .back{
-    position: absolute;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    transition: all 1s ease;
+.brand h1{
+    margin-left: 5%;
 }
 
-.card .front{
-    transform: rotateY(0deg);
-}
-
-.card .back{
-    transform: rotateY(180deg);
-}
-
-.card .front img{
-    max-width: 100%; 
-    border-radius: 20px;
-}
-
-
-.card .back .details{
-    max-width: 100%;
-    padding: 1em;
-    border-radius: 20px;
-}
-
-.card .back .details h2{
-    font-size: 1.3em;
-}
-
-.card .back .details h3{
-    font-size: 0.8em;
-}
-
-.card .back .details .rating{
-    position: relative;
-    padding: 0.313em 0;
-    font-size: 0.9;
-}
-
-.card .back .details .rating .fa-star{
-    color: #f7f406;
-    font-size: 1em;
-}
-
-
-.card .back .details .tags{
-    position: relative;
-    margin-top: 0.313em;
-}
-
-.comédia{background: #f4d23c;}
-.policial{background: #5a8ea2;}
-
-.card .back .details .tags span{
-    font-size: 0.75em;
-    padding: 0.125em 0.313em;
-    border-radius: 0.25em;
-    text-transform: capitalize;
-}
-
-.card .back .details .sinopse{
-    margin-top: 0.625em;
-}
-
-.card .back .details .sinopse p{
-    font-size: 0.65em;
-}
-
-.card .back .details .ageAndTime p{
-    font-size: 0.6em;
-}
-
-.card .back .details .streaming{
-    position: relative;
-}
-
-.card .back .details .streaming h4{
-    margin-top: 0.625em;
-}
-
-.card .back .details .streaming ul{
+.navbar{
     position: relative;
     display: flex;
-    gap: 0.625em;
-    margin-top: 0.625em;
+    width: 70%;
+    height: 100%;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.card .back .details .streaming ul li{
-    list-style: none;
-    width: 2.1em;
-    height: 2.1em;
+.searchBox{
+    position: relative;
+    width: 40%;
+}
+
+.searchBox input{
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    text-indent: 10px;
+    font-size: 16px;
+}
+
+#searchIcon{
+    position: relative;
+    left: -30px;
+    font-size: 18px;
+    color: rgb(77, 77, 77);
+    z-index: 221;
+    cursor: pointer;
+}
+
+.navbar ul{
+    width: 60%;
+    text-align: center;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-left: 4%;
+    padding: 1%;
+    transition: all 0.5s ease;
+    text-align: center;
+    cursor: pointer;
+    height: 22px;
     overflow: hidden;
-    border-radius: 10px;
 }
 
-.card .back .details .streaming ul li img{
-    max-width: 100%;
+.navbar ul li:hover{
+    height: 50px;
 }
 
-.card:hover .front{
-    transform: rotateY(-180deg);
+.navbar ul li #headIcon{
+    display: block;
+    font-size: 18px;
 }
 
-.card:hover .back{
-    transform: rotateY(0deg);
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
 }
+
+.navbar ul li a:active, :focus{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+#menuIcon{
+    display: none;
+}
+
+@media (max-width: 768px){
+
+    .searchBox{
+        position: relative;
+        width: 100%;
+        top: 60px;
+        z-index: 221;
+        left: 5%;
+    }
+
+    #menuIcon{
+        display: inline;
+        position: fixed;
+        margin-left: 88%;
+        font-size: 25px;
+        padding: 1%;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid rgb(221, 221, 221);
+        z-index: 222;
+    }
+
+    .navbar.navactive{
+        display: inline;
+    }
+
+    .navbar{
+        position: relative;
+        display: block;
+        width: 60%;
+        display: none;
+    }
+
+    .navbar ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(8, 9, 19);
+    }
+
+    .navbar ul li{
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+        text-align: left;
+        position: relative;
+        top: 50px;
+        padding: 2%;
+    }
+
+    .navbar ul li:hover{
+        background: rgb(31, 31, 31);
+    }
+
+    .navbar ul li #headIcon{
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .navbar ul li a{
+        margin-left: 35px;
+        font-family: 600;
+    }
+};

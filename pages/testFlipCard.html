@@ -9,74 +9,38 @@
     <link rel="stylesheet" href="../styles/testFlipCard.css">
 </head>
 <body>
-    <div class="short">
-        <div class="card">
-            <div class="front">
-                <img src="../assets/img/capas/C4.png" alt="">
-            </div>
-            <div class="back">
-                <div class="details">
-                    <h2>As Branquelas</h2>
-                    <h3>Direção: Keenen Ivory Wayans</h3>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <span>5,7/10 IMDb</span>
-                    </div>
-                    <div class="ageAndTime">
-                        <p>2004 - 1h 49m</p>
-                    </div>
-                    <div class="tags">
-                        <span class="comédia">comédia</span>
-                        <span class="policial">policial</span>
-                    </div>
-                    <div class="sinopse">
-                        <p>Dois irmãos agentes do FBI, Marcus e Kevin Copeland, acidentalmente evitam que bandidos sejam presos em uma apreensão de drogas. Como castigo, eles são forçados a escoltar um par de socialites nos Hamptons. Quando as meninas descobrem o plano da agência, elas se recusam a ir. Sem opções, Marcus e Kevin, dois homens negros, decidem fingir que são as irmãs e se transformam em um par de loiras.</p>
-                    </div>
-                    <div class="streaming">
-                        <h4>Onde assistir?</h4>
-                        <ul>
-                            <li><img src="../assets/img/logos/netflix.png" alt=""></li>
-                            <li><img src="../assets/img/logos/paramount.png" alt=""></li>
-                            <li><img src="../assets/img/logos/now.png" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <header>
+        <div class="brand">
+            <span class="fa-solid fa-film"></span>
+            <h1>RMT</h1>
         </div>
+        <span class="fa-solid fa-bars" id="menuIcon" onclick="toggle()"></span>
+        <div class="navbar" id="nav">
+            <div class="searchBox">
+                <input type="text" placeholder="Pesquisar um filme...">
+                <span class="fas fa-search" id="searchIcon"></span>
+            </div>
+            <ul>
+                <li>
+                    <span class="fas fa-home" id="headIcon"></span>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <span class="fa-solid fa-clapperboard" id="headIcon"></span>
+                    <a href="../pages/catalog.html">Catálogo</a>
+                </li>
+                <li>
+                    <span class="fa-solid fa-door-open" id="headIcon"></span>
+                    <a href="#">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-        <div class="card">
-            <div class="front">
-                <img src="../assets/img/capas/C51.png" alt="">
-            </div>
-            <div class="back">
-                <div class="details">
-                    <h2>As Branquelas</h2>
-                    <h3>Direção: Keenen Ivory Wayans</h3>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <span>5,7/10 IMDb</span>
-                    </div>
-                    <div class="ageAndTime">
-                        <p>2004 - 1h 49m</p>
-                    </div>
-                    <div class="tags">
-                        <span class="comédia">comédia</span>
-                        <span class="policial">policial</span>
-                    </div>
-                    <div class="sinopse">
-                        <p>Carl Fredricksen é um vendedor de balões que, aos 78 anos, está prestes a perder a casa em que sempre viveu com sua esposa, a falecida Ellie. Após um incidente, Carl é considerado uma ameaça pública e forçado a ser internado. Para evitar que isto aconteça, ele põe balões em sua casa, fazendo com que ela levante voo. Carl quer viajar para uma floresta na América do Sul, onde ele e Ellie sempre desejaram morar, mas descobre que um problema embarcou junto: Russell, um menino de 8 anos.</p>
-                    </div>
-                    <div class="streaming">
-                        <h4>Onde assistir?</h4>
-                        <ul>
-                            <li><img src="../assets/img/logos/netflix.png" alt=""></li>
-                            <li><img src="../assets/img/logos/paramount.png" alt=""></li>
-                            <li><img src="../assets/img/logos/now.png" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script>
+        const toggle = () =>{
+            document.getElementById('nav').classList.toggle('navactive');
+        }
+    </script>
 </body>
 </html>
