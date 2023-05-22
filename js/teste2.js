@@ -50,7 +50,12 @@ function render(filmography){
         })
     }
 
-    listContainer.innerHTML = list;
+
+    listContainer.innerHTML += list;
+
 };
 
 render(filmography);
+
+    
+

@@ -12,7 +12,7 @@
 header{
     position: relative;
     width: 100%;
-    height: 70px;
+    height: 60px;
     background: rgb(8, 9, 19);
     color: #fff;
     display: flex;
@@ -107,6 +107,29 @@ header{
 
 #menuIcon{
     display: none;
+}
+
+/*----------------------Footer------------------*/
+
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(8, 9, 19);
+    color: #fff;
+    padding: 0.5em;
+}
+
+.foot h3{
+    font-size: 1em;
+}
+
+.social a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
 }
 
 @media (max-width: 768px){
