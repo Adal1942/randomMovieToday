@@ -6,13 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filme Aleatório de Hoje</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/styles2.css">
 </head>
 <body>
 
+    <header>
+        <div class="brand">
+            <span class="fa-solid fa-film"></span>
+            <h1>RMT</h1>
+        </div>
+        <span class="fa-solid fa-bars" id="menuIcon" onclick="toggle()"></span>
+        <div class="navbar" id="nav">
+            <ul>
+                <li>
+                    <span class="fas fa-home" id="headIcon"></span>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <span class="fa-solid fa-clapperboard" id="headIcon"></span>
+                    <a href="../pages/catalog.html">Catálogo</a>
+                </li>
+                <li>
+                    <span class="fa-solid fa-door-open" id="headIcon"></span>
+                    <a href="#">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     
 
-    <div id="container" class="short"></div>
+    <!--<div id="container" class="short"></div>-->
+
+    <!--
+        <div class="buttonsStyle">
+            <a href="" class="styleFour" style="--clr: #1da1f2;">
+                <span>Sortear</span>
+            </a>
+        </div>
+    -->
+
+    <footer>
+        <div class="foot">
+            <h3>Desenvolvido por - Adauto Nascimento</h3>
+
+            <div class="social">
+                <a href="https://github.com/Adal1942">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/adauto-goncalves/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="./js/filmography.js"></script>
