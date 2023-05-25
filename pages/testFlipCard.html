@@ -17,8 +17,8 @@
         </div>
         <span class="fa-solid fa-bars" id="menuIcon" onclick="toggle()"></span>
         <div class="navbar" id="nav">
-            <div class="searchBox">
-                <input type="text" placeholder="Pesquisar um filme...">
+            <div id="searchBox">
+                <input type="text" placeholder="Pesquisar um filme..." id="search">
                 <span class="fas fa-search" id="searchIcon"></span>
             </div>
             <ul>
@@ -37,6 +37,10 @@
             </ul>
         </div>
     </header>
+
+    <section>
+        <div class="movies" id="contagem"></div>
+    </section>
 
     <section class="middle">
         <ol id="container" class="short"></ol>
@@ -66,7 +70,7 @@
     </footer>
 
     <script src="../js/filmography.js"></script>
-    <script src="../js/teste2.js"></script>
+    <script src="../js/teste3.js"></script>
     <script>
         const toggle = () =>{
             document.getElementById('nav').classList.toggle('navactive');

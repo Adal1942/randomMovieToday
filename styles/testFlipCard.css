@@ -46,12 +46,12 @@ header{
     justify-content: space-between;
 }
 
-.searchBox{
+#searchBox{
     position: relative;
     width: 40%;
 }
 
-.searchBox input{
+#searchBox input{
     width: 80%;
     height: 35px;
     border: none;
@@ -109,6 +109,16 @@ header{
     display: none;
 }
 
+.movies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1d;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+
 /*----------------------Footer------------------*/
 
 .foot{
@@ -134,7 +144,7 @@ header{
 
 @media (max-width: 768px){
 
-    .searchBox{
+    #searchBox{
         position: relative;
         width: 100%;
         top: 60px;

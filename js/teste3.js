@@ -1,67 +1,67 @@
 const listContainer = document.querySelector("#container");
-const loadMoreButton = document.getElementById('loadMoreButton');
-const maxRecords = filmography.length;
-const limit = 10;
-let offset = 0;
+const searchBox = document.querySelector("#searchBox");
+const contagem = document.querySelector("#contagem");
 
-function loadMoviesItens(offset, limit){
-    filmography.forEach((cod, index) =>{
-        list+= `
-            <div class="card">
-                <div class="front">
-                    <div class="poster">
-                        <img src="../assets/img/capas/${cod.capa}.png" alt="">
-                    </div>
-                </div>
-               
-                <div class="back">
-                    <div class="details">
-                            <h2>Título: ${cod.name}</h2>
-                            <h3>Direção: ${cod.direcao}</h3>
-                            <div class="rating">
-                                <i class="fa-solid fa-star"></i>
-                                <span>${cod.nota}/10 IMDb</span>
-                            </div>
-                            <div class="ageAndTime">
-                                <p>${cod.age} - ${cod.duration}</p>
-                            </div>
-                            <div class="tags">
-                                <span class="${cod.tag1}">${cod.tag1}</span>
-                                <span class="${cod.tag2}">${cod.tag2}</span>
-                            </div>
-                            <div class="sinopse">
-                                <p>${cod.sinopse}</p>
-                            </div>
-                            <div class="streaming">
-                                <h4>Onde assistir?</h4>
-                                <ul>
-                                    <li><img src="../assets/img/logos/${cod.logo1}" alt=""></li>
-                                    <li><img src="../assets/img/logos/${cod.logo2}" alt=""></li>
-                                    <li><img src="../assets/img/logos/${cod.logo3}" alt=""></li>
-                                    <li><img src="../assets/img/logos/${cod.logo4}" alt=""></li>
-                                    <li><img src="../assets/img/logos/${cod.logo5}" alt=""></li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        `})
-        listContainer.innerHTML += list;
+function renderContagem(filmography){
+    const totalMovies = filmography.length;
+
+    contagem.innerHTML = totalMovies > 0 ? `${totalMovies} filmes disponíveis` : `0 filmes disponíveis`;
 }
 
-loadMoviesItens(offset, limit)
+function render(filmography){
+    let list = '';
 
-    loadMoreButton.addEventListener('click', () =>{
-        offset += limit
+    if(filmography.length <= 0){
+        list += `<div id="no-project">Nenhum filme encontrado</div>`
+    }else{
+        filmography.forEach((cod, index) =>{
+            list+= `
+                <div class="card" data-id="${cod.id}">
+                    <div class="front">
+                        <div class="poster">
+                            <img src="../assets/img/capas/${cod.capa}.png" alt="">
+                        </div>
+                    </div>
+                   
+                    <div class="back">
+                        <div class="details">
+                                <h2>Título: ${cod.name}</h2>
+                                <h3>Direção: ${cod.direcao}</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>${cod.nota}/10 IMDb</span>
+                                </div>
+                                <div class="ageAndTime">
+                                    <p>${cod.age} - ${cod.duration}</p>
+                                </div>
+                                <div class="tags">
+                                    <span class="${cod.tag1}">${cod.tag1}</span>
+                                    <span class="${cod.tag2}">${cod.tag2}</span>
+                                </div>
+                                <div class="sinopse">
+                                    <p>${cod.sinopse}</p>
+                                </div>
+                                <div class="streaming">
+                                    <h4>Onde assistir?</h4>
+                                    <ul>
+                                        <li><img src="../assets/img/logos/${cod.logo1}" alt=""></li>
+                                        <li><img src="../assets/img/logos/${cod.logo2}" alt=""></li>
+                                        <li><img src="../assets/img/logos/${cod.logo3}" alt=""></li>
+                                        <li><img src="../assets/img/logos/${cod.logo4}" alt=""></li>
+                                        <li><img src="../assets/img/logos/${cod.logo5}" alt=""></li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            `
+        })
+    }
 
-        const qtdRecordNextPage = offset + limit;
 
-        if(qtdRecordNextPage >= maxRecords){
-            const newLimit = maxRecords - offset;
-            loadMoviesItens(offset, newLimit)
+    listContainer.innerHTML += list;
 
-            loadMoreButton.parentElement.removeChild(loadMoreButton)
-        } else {
-            loadMoviesItens(offset, limit)
-        }
-    })
+};
+
+render(filmography);
+renderContagem(filmography);
