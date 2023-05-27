@@ -1478,6 +1478,23 @@ const filmography = [
         logo4: '',
         logo5: '',
     },
+    /*{
+        id: 88,
+        name: 'Orgulho e Preconceito',
+        age: '2005',
+        duration: '2h 7m',
+        capa: 'C88',
+        direcao: 'Joe Wright',
+        sinopse: 'Elizabeth Bennet vive com sua mãe, pai e irmãs no campo, na Inglaterra. Por ser uma das filhas mais velhas, ela enfrenta uma crescente pressão de seus pais para se casar. Quando Elizabeth é apresentada ao belo e rico Darcy, faíscas voam. Embora haja uma química óbvia entre os dois, a natureza excessivamente reservada de Darcy ameaça a relação.',
+        nota: '',
+        tag1: 'romance',
+        tag2: 'drama',
+        logo1: '',
+        logo2: '',
+        logo3: '',
+        logo4: '',
+        logo5: '',
+    },*/
       
 ];
 

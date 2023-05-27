@@ -9,6 +9,7 @@
 
 body{
     overflow: hidden;
+    background: #1a1a1d;
 }
 
 header{
@@ -90,7 +91,14 @@ header{
     display: none;
 }
 
+
 /*----------------------Footer------------------*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 .foot{
     display: flex;
