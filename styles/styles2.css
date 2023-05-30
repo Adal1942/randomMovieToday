@@ -134,6 +134,14 @@
     transform: rotateY(-180deg);
 }
 
+.card:hover{
+    width: 22em;
+    height: 32em;
+    transform:  scale(1.2);
+    transition: 0.5s;
+    z-index: 1;
+}
+
 .card:hover .back{
     transform: rotateY(0deg);
 }
