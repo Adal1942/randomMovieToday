@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1a1a1d;
+    background: #379683;
     flex-direction: column;
 }
 
@@ -15,7 +15,7 @@
     grid-gap: 1.25em;
     padding: 1.5em;
     font-size: 0.8em;
-    color: #fff;
+    color: #edf5e1;
 }
 
 .card{
@@ -24,7 +24,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    background: #05386b;
+    background: #950740;
 }
 
 .card .front,.card .back{
